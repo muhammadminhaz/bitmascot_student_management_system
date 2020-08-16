@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Search Page</title>
+
     <script
             src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -15,12 +16,13 @@
     <br><br>
     <button id = "button" name = "button">Search</button>
 
-    <p id = "hidden"></p>
+    <h id = "hidden"></h>
 </div>
 </body>
 
 <script>
 
+    //jQuery function
     $(document).ready(function(){
 
         $('#button').click(function() {
@@ -34,7 +36,7 @@
                 return false;
             }
 
-            var search = mixed_search.toUpperCase(); //Convert to uppercase letters
+            var search = mixed_search.toUpperCase();
 
             $.ajax({
                 url: URL,

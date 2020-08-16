@@ -26,7 +26,7 @@
     function addAjax() {
         $(document).ready(function() {
             var mix_name = $('#name').val();
-            var name = mix_name.toUpperCase(); //Convert the name in uppercase
+            var name = mix_name.toUpperCase();
             var age = $('#age').val();
 
             //Check if name field is empty
